@@ -1,28 +1,29 @@
-# 🎙️ YouTube English Accent Analyzer
+# YouTube English Accent Analyzer
 
-This project is a Streamlit web app that downloads a YouTube video, extracts its audio, transcribes the speech using OpenAI's Whisper model, and then classifies the English accent (e.g., British, American, Australian, Indian) based on common linguistic patterns and expressions.
-
----
-
-## 🔍 Features
-
-- 🎧 **Audio Extraction**: Downloads and converts YouTube video audio automatically.
-- 🧠 **Whisper Transcription**: Uses OpenAI's Whisper model (`large`) to accurately transcribe English speech.
-- 🌍 **Accent Classification**:
-  - British English 🇬🇧
-  - American English 🇺🇸
-  - Australian English 🇦🇺
-  - Indian English 🇮🇳
-  - General English (if no strong regional indicators found)
-- 📊 **Confidence Score** and short **explanation/note** for transparency.
-- 🖥️ **Streamlit UI**: Clean, interactive web interface.
+This project is a simple web-based tool built with Streamlit that accepts a public YouTube video URL, extracts and transcribes the spoken English audio using OpenAI's Whisper model, and classifies the accent (e.g., British, American, Australian, Indian).
 
 ---
 
-## 🚀 Getting Started
+## Features
+
+- Audio extraction from YouTube videos using `yt-dlp`.
+- High-quality speech-to-text transcription using the Whisper model (`base` or higher).
+- Keyword-based accent classification:
+  - British English
+  - American English
+  - Australian English
+  - Indian English
+  - General English (if no strong indicators)
+- Confidence score (0–100%) for how clearly the accent matches.
+- Short explanation or reasoning provided in the output.
+- Interactive Streamlit web interface.
+
+---
+
+## Getting Started
 
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/ahmedmohamedabdelsalam/accent-analyzer.git
+cd accent-analyzer
