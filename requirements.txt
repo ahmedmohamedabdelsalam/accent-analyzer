@@ -1,5 +1,5 @@
 streamlit==1.34.0
-openai-whisper
+git+https://github.com/openai/whisper.git
 yt_dlp
 torch==2.0.1+cpu
 torchaudio==2.0.2+cpu
